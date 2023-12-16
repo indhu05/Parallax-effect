@@ -1,0 +1,52 @@
+body,
+html {
+  height: 100%;
+  margin: 0;
+  font-family: "Ubuntu", sans-serif;
+  line-height: 180%;
+  color: #666;
+  text-align: center;
+}
+.parallax1 {
+  background-image: url(https://cdn.pixabay.com/photo/2020/01/25/19/14/paris-4793194_640.jpg);
+  min-height: 100%;
+}
+.parallax2 {
+  background-image: url(https://cdn.pixabay.com/photo/2015/06/18/01/02/paris-813238_640.jpg);
+  min-height: 60%;
+}
+.parallax3 {
+  background-image: url(https://cdn.pixabay.com/photo/2013/03/01/17/54/paris-87211_640.jpg);
+  min-height: 100%;
+}
+
+.parallax1,
+.parallax2,
+.parallax3 {
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.head {
+  position: absolute;
+  color: #fff;
+  font-size: 500%;
+  top: 50%;
+  width: 100%;
+  text-transform: uppercase;
+  letter-spacing: 20px;
+  animation: drop 5s ease;
+}
+@keyframes drop {
+  0% {
+    top: 0px;
+  }
+  25% {
+    top: 200px;
+  }
+}
+
+@import url("https://fonts.googleapis.com/css?family=Ubuntu");
